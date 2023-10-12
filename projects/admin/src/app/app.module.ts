@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from "ngx-spinner";
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NgxSpinnerModule } from "ngx-spinner";
     ToastrModule.forRoot(),
     HttpClientModule,
     AppRoutingModule,
-    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' }),
+    CoreModule,
+    NgxSpinnerModule.forRoot({ type: 'ball-triangle-path' }),
     BrowserAnimationsModule
   ],
   providers: [],
