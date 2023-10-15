@@ -4,7 +4,7 @@ export interface Login{
     role: string
   }
 
-  export interface LoginResponse{
+  export interface LoginResponse {
     token: string,
-    userID: string
+    userId: string,
   }
